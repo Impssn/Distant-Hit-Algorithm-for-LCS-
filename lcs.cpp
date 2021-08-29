@@ -13,7 +13,7 @@ int main()
 	l2=str2.size();
 	bool res[l1],res2[l2];  // Boolean array has 1 if the letter of that index is present in LCS else 0
 	memset(res,0,sizeof(res));  // initialize Boolean array res and res2 to be 0's in all entries
-     memset(res2,0,sizeof(res2));
+        memset(res2,0,sizeof(res2));
 	for(i=0;i<str1.size();i++)  // to traverse str1
 	{
 		for(j=0;j<str2.size();j++)   // to traverse str2
