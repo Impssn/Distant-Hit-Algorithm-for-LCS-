@@ -2,7 +2,7 @@
 This Algorithm finds the LCS of two given Strings in an Optimized way by Reducing Space Complexity primarily.
 I) Generally in this Approach the Characters of String 1 is taken to be in a row-wise manner and Characters of String 2 is taken to be in a column-wise manner.
 Both of them are kept traversing in the Order of m*n Where m=>String 1's length , n=>String 2's length.
-If there is a equal Letter(Character) found we assign '1' to the bool array initialized with 0 priorly before
+If there is a equal Letter(Character) found we assign '1' to the bool array initialized with '0' priorly before
 starting this Step and keep the track of which is the larger index where 2 Characters coincided
 and also weather row-index was larger or else column-index was larger is also kept into track. Next time we find 
 a matching element in row and column we assign it's index to '1' only if the current row-index of the element
