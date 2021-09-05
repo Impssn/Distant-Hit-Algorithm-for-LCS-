@@ -76,9 +76,9 @@ int main()
 					i>=j?max=i,ij=0:max=j,ij=1;   // maximum(row,column) assigned to max
 					break;
 			        }
-		     }
-	    }
-    }
+		      }
+	     }
+     }
 	for(i=0;i<sizeof(res2);i++)   // Assign the str1 to ans2 by checking if it's present in LCS 
 	{
 		if(res2[i]==1)
