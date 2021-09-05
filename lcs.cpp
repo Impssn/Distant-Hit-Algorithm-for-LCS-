@@ -26,7 +26,7 @@ int main()
 					i>=j?max=i,ij=0:max=j,ij=1;  // maximum(row,column) assigned to max
 					break;
 				}
-			    if(max<i && ij==0)  //if 2 elmts are equal and resulting row greater than that of previous LCS elmt's row we assign it's index to LCS
+			        if(max<i && ij==0)  //if 2 elmts are equal and resulting row greater than that of previous LCS elmt's row we assign it's index to LCS
 				{
 					res[i]=1;
 					i>=j?max=i,ij=0:max=j,ij=1;   // maximum(row,column) assigned to max
