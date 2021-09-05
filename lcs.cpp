@@ -52,21 +52,21 @@ int main()
     str1=str2;
     str2=str3;
     max=0;  // Re-initialize max to 0
-	for(i=0;i<str1.size();i++)  // to traverse str1
+    for(i=0;i<str1.size();i++)  // to traverse str1
     {
 	    for(j=0;j<str2.size();j++)   // to traverse str2
 	    {
 		    if(str1[i]==str2[j])
 		    {
-			    if(max==0)    //if first letters are equal we assign it's index to LCS
-			    {
+			        if(max==0)    //if first letters are equal we assign it's index to LCS
+			        {
 					res2[i]=1;
-				    i>=j?max=i,ij=0:max=j,ij=1;   // maximum(row,column) assigned to max
+				        i>=j?max=i,ij=0:max=j,ij=1;   // maximum(row,column) assigned to max
 					break;
-				}
+			        }
 				if(max<i && ij==0)     //if 2 elmts are equal and resulting row greater than that of previous LCS elmt's row we assign it's index to LCS
 				{
-				    res2[i]=1;
+				        res2[i]=1;
 					i>=j?max=i,ij=0:max=j,ij=1;   // maximum(row,column) assigned to max
 					break;
 				}
@@ -75,9 +75,9 @@ int main()
 					res2[i]=1;
 					i>=j?max=i,ij=0:max=j,ij=1;   // maximum(row,column) assigned to max
 					break;
-			    }
-			}
-	   	}
+			        }
+		     }
+	    }
     }
 	for(i=0;i<sizeof(res2);i++)   // Assign the str1 to ans2 by checking if it's present in LCS 
 	{
