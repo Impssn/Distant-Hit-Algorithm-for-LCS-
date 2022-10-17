@@ -1,4 +1,4 @@
-# Optimized-LCS-Algorithm
+# Distant Hit Algorithm for LCS
 This Algorithm finds the LCS of two given Strings in an Optimized way by Reducing Space Complexity primarily.
 I) Generally in this Approach the Characters of String 1 is taken to be in a row-wise manner and Characters of String 2 is taken to be in a column-wise manner.
 Both of them are kept traversing in the Order of m*n Where m=>String 1's length , n=>String 2's length.
